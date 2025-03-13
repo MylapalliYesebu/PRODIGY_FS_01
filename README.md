@@ -2,7 +2,7 @@
 A secure authentication system using Spring Boot (Backend) and React.js (Frontend).
 
 
-## 📌 Project Overview
+## 📌 Project Overview 
 
 This project implements a **secure user authentication system** where users can:  
 ✔ Sign up with a username and password  
