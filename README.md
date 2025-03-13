@@ -1,10 +1,15 @@
 # PRODIGY_FS_01
 A secure authentication system using Spring Boot (Backend) and React.js (Frontend).
-# Secure User Authentication System
+
 
 ## 📌 Project Overview
 
-This project implements a secure authentication system that allows users to **sign up**, **log in securely**, and **access protected routes** only after successful authentication. It follows standard security practices, including password hashing, session management, and role-based access control.
+This project implements a **secure user authentication system** where users can:  
+✔ Sign up with a username and password  
+✔ Log in securely using JWT authentication  
+✔ Access protected routes after successful authentication  
+✔ (Optional) Implement role-based access control (admin/user)
+
 
 ## 🛠 Tech Stack
 
@@ -21,74 +26,61 @@ This project implements a secure authentication system that allows users to **si
 ✅ Session management with JWT\
 ✅ Logout functionality
 
+
 ## 📂 Folder Structure
 
 ```
-secure-user-authentication/
+PRODIGY_FS_01/
 │── backend/         # Spring Boot backend
 │── frontend/        # React.js frontend
 │── README.md        # Project documentation
 ```
 
-## 📖 Setup Instructions
 
-### 🔹 Backend Setup (Spring Boot)
+## 🚀 Getting Started
 
-1️⃣ Navigate to the `backend/` folder:
+### 1️⃣ Clone the Repository
 
+```bash
+git clone https://github.com/MylapalliYesebu/PRODIGY_FS_01.git
+cd PRODIGY_FS_01
+```
+
+### 2️⃣ Set Up Backend (Spring Boot)
+- Install Java JDK 17+
+- Install MySQL and create a database
+- Configure database settings in application.properties
+- Run the Spring Boot application
 ```bash
 cd backend
+mvn spring-boot: run
 ```
 
-2️⃣ Install dependencies:
+### 3️⃣ Set Up Frontend (React.js)
+- Install Node.js
+- Run:
+  ```bash
+  cd frontend
+  npm install
+  npm start
+  ```
 
-```bash
-mvn clean install
-```
 
-3️⃣ Run the Spring Boot application:
+## 🔥 Features to Implement
 
-```bash
-mvn spring-boot:run
-```
+- [ ]  User Registration & Login
+- [ ]  Secure JWT Authentication
+- [ ]  Password Hashing (BCrypt)
+- [ ]  Protected Routes
+- [ ]  Role-Based Access Control (Optional)
 
-### 🔹 Frontend Setup (React.js)
+## 📝 Future Improvements
 
-1️⃣ Navigate to the `frontend/` folder:
+- Multi-factor authentication (MFA)
+- OAuth login (Google, GitHub)
+- UI Enhancements
 
-```bash
-cd frontend
-```
-
-2️⃣ Install dependencies:
-
-```bash
-npm install
-```
-
-3️⃣ Start the React development server:
-
-```bash
-npm start
-```
-
-## 📌 API Endpoints
-
-### **🔐 Authentication Routes**
-
-| Method | Endpoint             | Description            |
-| ------ | -------------------- | ---------------------- |
-| POST   | `/api/auth/register` | User Signup            |
-| POST   | `/api/auth/login`    | User Login (JWT Token) |
-| GET    | `/api/auth/user`     | Get User Details       |
-
-## 💡 Next Steps
-
-- Implement **Forgot Password** functionality
-- Add **OAuth (Google, GitHub Login)** *(Optional)*
-
----
-
-🔹 **Author:** Mylapalli Yesebu\
-🔹 **GitHub:** [MylapalliYesebu](https://github.com/MylapalliYesebu)
-
+## 🧑‍💻 Author
+### Mylapalli Yesebu
+🔹 **GitHub:** [MylapalliYesebu](https://github.com/MylapalliYesebu)    
+🔹 **Email:**  <span style="color:blue"><yesebumylapalli08@gmail.com></span>
